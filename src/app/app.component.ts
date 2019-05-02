@@ -18,7 +18,7 @@ export class AppComponent {
 	ngOnInit() {
 		this.data.getCountries().subscribe(res => {
 			this.countries = res;
-			console.log(this.countries[0].name);
+			console.log(this.countries[0].currencies[0].name);
 		});
 	}
 }
