@@ -1,9 +1,34 @@
+<!--burger-style side-nav open button and a settings menu using a material icon-->
+<mat-toolbar color="primary">
+  <button mat-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Countries</span>
+  <span class="example-spacer"></span>
+  <button mat-button [matMenuTriggerFor]="appMenu"><mat-icon>settings</mat-icon></button>
+</mat-toolbar>
 
+<!--menu items listed as buttons.-->
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item><mat-icon matSuffix>language</mat-icon></button>
+  <button mat-menu-item> Help </button>
+</mat-menu>
 
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="country name" value="query">
+  </mat-form-field>
+</form>
+
+<!--sidenav component to add side content to a fullscreen app-->
+<mat-sidenav-container class="example-container">
+
+  <!-- <mat-sidenav #sidenav class="example-sidenav"></mat-sidenav> -->
 
   <mat-card class="example-card"  *ngFor="let country of countries">
     <mat-card-header>
-      <mat-card-title class="title">{{country.name}}</mat-card-title>
+      <!-- <div mat-card-avatar></div> -->
+      <mat-card-title class="title">{{country.name | lowercase}}</mat-card-title>
       <mat-card-subtitle class="subtitle">{{country.subregion}}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image class="" src="{{country.flag}}" alt="country flag of {{country.name}}">
@@ -12,14 +37,20 @@
         Capital: {{country.capital}}<br>
         Calling code: {{country.callingCodes}}<br>
         Timezone: {{country.timezones}}
-        <!-- The currency is the {{country.currencies.name}}.
-        Language(s): {{country.languages.name}} -->
+        Currency: {{country.currencies[0].name}}<br>
+        Languages: <span *ngFor="let language of country.languages; let i = last">{{language.name}}{{i ? "" : ","}} </span><br>
+        Currencies: <span *ngFor="let currency of country.currencies; let i = last">{{currency.name}}{{i ? "" : ","}} </span>
       </p>
+
     </mat-card-content>
+
     <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
+      <button mat-button><a href="/country/{{getPath(country['name'])}}"></a><mat-icon aria-hidden="false" aria-label="info icon">info</mat-icon></button>
+      <a href="https://www.google.es/maps/@{{ country['latlng'] }}z" target="_blank" style="color: black;"><mat-icon aria-hidden="false" aria-label="home icon"></mat-icon></a>
+    </mat-card-actions>
+
   </mat-card>
+
+</mat-sidenav-container>
 
 <!-- <router-outlet></router-outlet> -->

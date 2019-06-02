@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 	providedIn: 'root'
 })
 export class DataService {
-
+	API_URL = 'https://restcountries.eu/rest/v2';
 	result: any;
 
 	constructor(private http: HttpClient) { }
@@ -14,7 +14,7 @@ export class DataService {
 	// function to get info for all countries
 	getCountries() {
 		return this.http
-			.get('https://restcountries.eu/rest/v2/all')
+			.get(`${this.API_URL}/all`)
 			.pipe(map(
 				result => this.result = result
 			));

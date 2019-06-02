@@ -10,7 +10,8 @@ import {
 	MatListModule
 } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
+import { MatIconModule } from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,7 +32,8 @@ import { DataService } from './data.service';
 		MatToolbarModule,
 		MatIconModule,
 		MatSidenavModule,
-		MatListModule
+		MatListModule,
+		MatInputModule
 	],
 	providers: [DataService],
 	bootstrap: [AppComponent]
