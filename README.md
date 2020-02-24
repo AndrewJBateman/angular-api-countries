@@ -1,6 +1,6 @@
 # Angular Api Countries
 
-*Angular 8 app that displays details about countries using data from the [Rest Countries](https://restcountries.eu/) API.
+*Angular 9 app that displays details about countries using data from the [Rest Countries](https://restcountries.eu/) API.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -25,15 +25,13 @@
 
 ## Technologies
 
-* [Angular v8.0.0](https://angular.io/)
-
-* [Angular CLI v8.0.1](https://cli.angular.io/)
+* [Angular v9.1.0](https://angular.io/)
 
 * [Angular HttpClient](https://angular.io/guide/http) module used to communicate with back-end services via the XMLHttpRequest browser interface.
 
-* [RxJS Library v6.5.2](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observables](http://reactivex.io/documentation/observable.html).
+* [RxJS Library v6.5.4](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observables](http://reactivex.io/documentation/observable.html).
 
-* [Angular Material Design v8.0.0](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview)[mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
+* [Angular Material Design v9.0.0](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview)[mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
 
 ## Setup
 
@@ -67,8 +65,7 @@ export class DataService {
 ## Features
 
 * Angular httpClient used to get data from an API.
-
-* created using latest Angular 7 version with all dependency conflicts resolved.
+* Updated to latest Angular 9 version with all dependency conflicts resolved.
 
 ## Status & To-Do List
 
