@@ -1,17 +1,17 @@
 # :zap: Angular Api Countries
 
-* Angular 9 app that displays details about countries using data from the [Rest Countries](https://restcountries.eu/) API. To be developed into a different API data app
+* Angular 10 app that displays details about countries using data from the [Rest Countries](https://restcountries.eu/) API. To be developed into a different API data app
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
 ## :page_facing_up: Table of contents
 
 * [:zap: Angular Api Countries](#zap-angular-api-countries)
-  * [:page_facing_up: Table of contents](#pagefacingup-table-of-contents)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signalstrength-technologies)
-  * [:floppy_disk: Setup](#floppydisk-setup)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
@@ -28,10 +28,10 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v9](https://angular.io/)
+* [Angular v10](https://angular.io/)
 * [Angular HttpClient](https://angular.io/guide/http) module used to communicate with back-end services via the XMLHttpRequest browser interface.
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observables](http://reactivex.io/documentation/observable.html).
-* [Angular Material Design v9](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview)[mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
+* [Angular Material Design v10](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview)[mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
 
 ## :floppy_disk: Setup
 
