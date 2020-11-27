@@ -37,7 +37,7 @@
 
 * Run `npm i` to install dependencies.
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app does automatically reload if you change any of the source files.
-* Run `ng build --prod` to create build files in `docs` folder. These will be deployed to github-pages.
+* Run `ng build --prod` to create build files in `docs` folder. These will be deployed to github-pages. You need to copy the `index.html` file in the `docs` folder and paste it the same folder with a new name of `404.html`. The `index.html` can be deleted.
 
 ## :computer: Code Examples
 
