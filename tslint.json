@@ -23,10 +23,7 @@
       "rxjs/Rx"
     ],
     "import-spacing": true,
-    "indent": [
-      true,
-      "tabs", 2
-    ],
+    "indent": false,
     "interface-name": false,
     "max-classes-per-file": false,
     "max-line-length": [
@@ -71,7 +68,7 @@
     "ordered-imports": false,
     "quotemark": [
       true,
-      "single"
+      "double"
     ],
     "semicolon": {
       "options": [
