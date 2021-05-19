@@ -50,7 +50,6 @@
 * extract from `data.service.ts` to get country data using Angular httpClient module.
 
 ```typescript
-
   // function to get info for all countries
 getCountries() {
   return this.http
@@ -59,16 +58,15 @@ getCountries() {
       result => this.result = result
     ));
 }
-
 ```
 
 ## :cool: Features
 
-* Angular httpClient used to get data from an API.
+* Angular httpClient used to get data from an API and no API key is required.
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working, but menus not working. Updated may 2021.
+* Status: Working, except menus. Updated may 2021.
 * To-Do: Nothing
 
 ## :clap: Inspiration
