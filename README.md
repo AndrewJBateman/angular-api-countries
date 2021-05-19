@@ -5,7 +5,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-api-countries?style=plastic)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-api-countries?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-akita-api-countries?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-api-countries?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-api-countries?style=plastic)
 
 ## :page_facing_up: Table of contents
@@ -37,7 +37,7 @@
 * [Angular v12](https://angular.io/)
 * [Angular HttpClient](https://angular.io/guide/http) module used to communicate with back-end services via the XMLHttpRequest browser interface.
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observables](http://reactivex.io/documentation/observable.html).
-* [Angular Material Design v12](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview)[mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
+* [Angular Material Design v12](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview), [mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
 
 ## :floppy_disk: Setup
 
@@ -62,7 +62,7 @@ getCountries() {
 
 ## :cool: Features
 
-* Angular httpClient used to get data from an API and no API key is required.
+* Angular httpClient used to get data from an API - no API key is required.
 
 ## :clipboard: Status & To-Do List
 
