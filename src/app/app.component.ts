@@ -2,8 +2,6 @@ import { Component, OnInit } from "@angular/core";
 import { DataService } from "./data.service";
 import { DomSanitizer } from "@angular/platform-browser";
 import { MatIconRegistry } from "@angular/material/icon";
-import { MatIconModule } from "@angular/material/icon";
-// import { CommonModule } from '@angular/common';
 
 @Component({
   selector: "app-root",
@@ -14,7 +12,7 @@ export class AppComponent implements OnInit {
   title = "angular-api-countries";
 
   objectKeys = Object.keys;
-  public countries: any;
+  public countries: Object;
 
   constructor(
     private data: DataService,
@@ -33,7 +31,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.data.getCountries().subscribe((res) => {
       this.countries = res;
-      console.log(this.countries[0].currencies[0].name);
     });
   }
 
