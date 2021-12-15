@@ -26,24 +26,26 @@
 ## :books: General info
 
 * Uses the model-view-viewmodel (MVVM) of Angular to bind the remote data that is stored in objects in the application template. The component plays the part of the controller/viewmodel. The template represents the view.
-* Very basic working app that gets API country data and displays it
+* Basic app that gets API country data and displays it in a flex grid
 
 ## :camera: Screenshots
 
-![Example screenshot](./img/api.png).
+![Example screenshot](./img/apigrid.png).
 
 ## :signal_strength: Technologies
 
-* [Angular v12](https://angular.io/)
+* [Angular v13](https://angular.io/)
 * [Angular HttpClient](https://angular.io/guide/http) module used to communicate with back-end services via the XMLHttpRequest browser interface.
-* [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observables](http://reactivex.io/documentation/observable.html).
-* [Angular Material Design v12](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview), [mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
+* [Angular KeyValuePipe](https://angular.io/api/common/KeyValuePipe) to transform Object or Map into an array of key value pairs. Output array ordered by keys.
+* [RxJS Library v7](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observables](http://reactivex.io/documentation/observable.html).
+* [Angular Material Design v13](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview), [mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
+* [restcounties API v3](https://restcountries.com/) information about countries via a RESTful API. Note their latest endpoints used - they changed from .eu to .com and REST JSON format changed
 
 ## :floppy_disk: Setup
 
 * Run `npm i` to install dependencies.
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app does automatically reload if you change any of the source files.
-* Run `ng build --prod` to create build files in `docs` folder. These will be deployed to github-pages. You need to copy the `index.html` file in the `docs` folder and paste it the same folder with a new name of `404.html`.
+* Run `npm run build` to create build files in `docs` folder. These will be deployed to github-pages. You need to copy the `index.html` file in the `docs` folder and paste it the same folder with a new name of `404.html`.
 
 ## :computer: Code Examples
 
@@ -53,7 +55,7 @@
   // function to get info for all countries
 getCountries() {
   return this.http
-    .get('https://restcountries.eu/rest/v2/all')
+    .get(`${this.API_URL}/all`)
     .pipe(map(
       result => this.result = result
     ));
@@ -66,12 +68,12 @@ getCountries() {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working, except menus. Updated may 2021.
-* To-Do: Nothing
+* Status: Working. Menu links do not work
+* To-Do: Add user search of country etc. Menu
 
 ## :clap: Inspiration
 
-* none
+* [Stackoverflow: access key and value of object using *ngFor](https://stackoverflow.com/questions/35534959/access-key-and-value-of-object-using-ngfor) to access key-value pairs from API data for currencies etc.
 
 ## :file_folder: License
 
