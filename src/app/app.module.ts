@@ -14,6 +14,7 @@ import { MatInputModule } from "@angular/material/input";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { DataService } from "./data.service";
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [AppComponent],
@@ -30,6 +31,7 @@ import { DataService } from "./data.service";
     MatSidenavModule,
     MatListModule,
     MatInputModule,
+    FlexLayoutModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent],

@@ -33,8 +33,4 @@ export class AppComponent implements OnInit {
       this.countries = res;
     });
   }
-
-  getPath(name): string {
-    return name;
-  }
 }
