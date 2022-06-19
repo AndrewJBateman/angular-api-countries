@@ -27,7 +27,6 @@ export class AppComponent implements OnInit {
     );
   }
 
-  // tslint:disable-next-line: use-life-cycle-interface
   ngOnInit() {
     this.data.getCountries().subscribe((res) => {
       this.countries = res;
