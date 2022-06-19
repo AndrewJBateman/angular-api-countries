@@ -34,18 +34,18 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/)
+* [Angular v14](https://angular.io/)
 * [Angular HttpClient](https://angular.io/guide/http) module used to communicate with back-end services via the XMLHttpRequest browser interface.
 * [Angular KeyValuePipe](https://angular.io/api/common/KeyValuePipe) to transform Object or Map into an array of key value pairs. Output array ordered by keys.
 * [RxJS Library v7](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observables](http://reactivex.io/documentation/observable.html).
-* [Angular Material Design v13](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview), [mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
+* [Angular Material Design v14](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview), [mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
 * [restcounties API v3](https://restcountries.com/) information about countries via a RESTful API. Note their latest endpoints used - they changed from .eu to .com and REST JSON format changed
 
 ## :floppy_disk: Setup
 
 * Run `npm i` to install dependencies.
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app does automatically reload if you change any of the source files.
-* Run `npm run build` to create build files in `docs` folder. These will be deployed to github-pages. You need to copy the `index.html` file in the `docs` folder and paste it the same folder with a new name of `404.html`.
+* Run `npm run build` to create build files in `docs` folder. These will be deployed to github-pages. You need to copy the `index.html` file in the `docs` folder and paste it in the same folder with a new name of `404.html`.
 
 ## :computer: Code Examples
 
