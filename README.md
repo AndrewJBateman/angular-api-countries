@@ -34,11 +34,11 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v14](https://angular.io/)
+* [Angular v15](https://angular.io/)
 * [Angular HttpClient](https://angular.io/guide/http) module used to communicate with back-end services via the XMLHttpRequest browser interface.
 * [Angular KeyValuePipe](https://angular.io/api/common/KeyValuePipe) to transform Object or Map into an array of key value pairs. Output array ordered by keys.
 * [RxJS Library v7](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observables](http://reactivex.io/documentation/observable.html).
-* [Angular Material Design v14](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview), [mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
+* [Angular Material Design v15](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview), [mat-sidenav](https://material.angular.io/components/sidenav/overview), [mat-card](https://material.angular.io/components/card/overview) etc.
 * [restcounties API v3](https://restcountries.com/) information about countries via a RESTful API. Note their latest endpoints used - they changed from .eu to .com and REST JSON format changed
 
 ## :floppy_disk: Setup
